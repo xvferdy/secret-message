@@ -10,12 +10,6 @@ if (message) {
     document.querySelector('h1').innerHTML = message;
 }
 
-window.addEventListener('hashchange', function () {
-    // window.open(window.location.href);
-    window.location.href = window.location.href;
-    location.reload();
-});
-
 document.querySelector('form').addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -30,3 +24,9 @@ document.querySelector('form').addEventListener('submit', (event) => {
     linkInput.select();
 });
 
+//tambahan kalau mau langsung di execute di open new window atau current window
+window.addEventListener('hashchange', function () {
+    // window.open(window.location.href);
+    window.location.href = window.location.href;
+    location.reload();
+});
