@@ -1,6 +1,5 @@
-const {
-    hash
-} = window.location;
+const {hash} = window.location;
+
 const message = (atob(hash.replace('#', '')));
 
 if (message) {
@@ -26,7 +25,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
 
 //tambahan kalau mau langsung di execute di open new window atau current window
 window.addEventListener('hashchange', function () {
-    // window.open(window.location.href);
-    window.location.href = window.location.href;
+    // //window.open(window.location.href); //open new window
+    window.location.href = window.location.href; //current window
     location.reload();
 });
