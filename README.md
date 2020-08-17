@@ -14,3 +14,6 @@ Little project that's going to be focused around helping you share secret messag
 - CSS
 - Javascript
 - [Materialize](https://materializecss.com/) - _CSS framework_
+
+### Launch
+index.js || via [GitHub Pages](https://xvferdy.github.io/secret-message/ "https://xvferdy.github.io/secret-message/")
